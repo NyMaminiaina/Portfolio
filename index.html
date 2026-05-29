@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO - Savio</title>
+
+    <!-- Google Fonts - Police Poppins (moderne et propre) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Votre fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== SECTION HERO (ACCUEIL) ==================== -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <p class="hero-salut"> Bonjour, je suis</p>
+            <h1 class="hero-nom">Ny Maminiaina Savio</h1>
+            <h2 class="hero-metier">Développeur Web Full-Stack</h2>
+            <p class="hero-description">
+                Je crée des applications web modernes, performantes et sur mesure.<br>
+                Du front-end au back-end, je transforme vos idées en solutions concrètes.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/NyMaminiaina" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nymaminiaina/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION À PROPOS ==================== -->
+    <section id="apropos" class="apropos">
+        <div class="container">
+            <h2 class="section-title">À propos</h2>
+            <div class="apropos-content">
+                <div class="apropos-texte">
+                    <p>
+                        Passionné par l'informatique depuis toujours, je me suis formé intensivement
+                        au développement web au sein d'une institution spécialisée, en complément
+                        de nombreuses heures d'auto-formation.
+                    </p>
+                    <p>
+                        Je maîtrise la création de sites et d'applications web de A à Z :
+                        du <strong>front-end</strong> (HTML, CSS, JavaScript, React.js)
+                        au <strong>back-end</strong> (PHP, CodeIgniter, Symfony, Node.js),
+                        en passant par la gestion de bases de données.
+                    </p>
+                    <p>
+                        Curieux et polyvalent, j'aime aussi explorer d'autres domaines tech :
+                        installation système, design (Photoshop, CapCut), WordPress, Excel,
+                        et plateformes de travail en ligne.
+                    </p>
+                    <p>
+                        Aujourd'hui, je suis à la recherche d'un <strong>stage</strong>,
+                        d'un <strong>premier emploi</strong> ou de <strong>missions freelance</strong>
+                        pour mettre mes compétences au service de projets concrets.
+                    </p>
+                </div>
+                <div class="apropos-infos">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Madagascar</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Malgache, Français, Anglais (en cours)</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Ouvert aux opportunités</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION COMPÉTENCES ==================== -->
+    <section id="competences" class="competences">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+
+            <div class="competences-grid">
+                <!-- Langages & Frameworks -->
+                <div class="competence-categorie">
+                    <h3><i class="fas fa-code"></i> Langages & Frameworks</h3>
+                    <div class="badges">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">jQuery</span>
+                        <span class="badge">PHP</span>
+                        <span class="badge">CodeIgniter</span>
+                        <span class="badge">Symfony</span>
+                        <span class="badge">React.js</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Outils & Logiciels -->
+                <div class="competence-categorie">
+                    <h3><i class="fas fa-tools"></i> Outils & Workflow</h3>
+                    <div class="badges">
+                        <span class="badge">Environnement de développement (VS Code, XAMPP)</span>
+                        <span class="badge">Gestion de versions (Git, GitHub)</span>
+                        <span class="badge">CMS (WordPress)</span>
+                        <span class="badge">Design & Montage (Photoshop, CapCut)</span>
+                        <span class="badge">Suite bureautique (Excel, Google Workspace)</span>
+                    </div>
+                </div>
+
+                <!-- Autres compétences -->
+                <div class="competence-categorie">
+                    <h3><i class="fas fa-server"></i> Infrastructure & Systèmes</h3>
+                    <div class="badges">
+                        <span class="badge">Administration système (Windows, Linux)</span>
+                        <span class="badge">Support IT & Maintenance</span>
+                        <span class="badge">Virtualisation & Multi-boot</span>
+                        <span class="badge">Modding Android (Root, Custom ROM)</span>
+                    </div>
+                </div>
+
+                <div class="competence-categorie">
+                    <h3><i class="fas fa-briefcase"></i> Plateformes Freelance</h3>
+                    <div class="badges">
+                        <span class="badge">Remotasks</span>
+                        <span class="badge">SproutGigs</span>
+                        <span class="badge">ClickWorker</span>
+                    </div>
+                </div>
+
+                <!-- Wallets & Plateformes -->
+                <div class="competence-categorie">
+                    <h3><i class="fas fa-wallet"></i> Paiement & Crypto</h3>
+                    <div class="badges">
+                        <span class="badge">PayPal</span>
+                        <span class="badge">Payoneer</span>
+                        <span class="badge">Binance</span>
+                        <span class="badge">OKX</span>
+                        <span class="badge">MetaMask</span>
+                        <span class="badge">Payeer</span>
+                        <span class="badge">FaucetPay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION PROJETS ==================== -->
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+
+            <div class="projets-grid">
+
+                <!-- Projet 1 : Gestion de Stock -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <!-- <img src="images/projet-stock.jpg" alt="Application Gestion de Stock"> -->
+                        <div class="projet-overlay">
+                            <a href="#" class="btn btn-small">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="projet-info">
+                        <h3>Gestion de Stock</h3>
+                        <p>Application web complète de gestion des stocks avec suivi des entrées/sorties, alertes et
+                            tableaux de bord.</p>
+                        <div class="projet-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>jQuery</span><span>PHP</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 : Mini e-Learning -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <!-- <img src="images/projet-elearning.jpg" alt="Plateforme e-Learning"> -->
+                        <div class="projet-overlay">
+                            <a href="#" class="btn btn-small">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="projet-info">
+                        <h3>Mini Plateforme e-Learning</h3>
+                        <p>Plateforme moderne d'apprentissage en ligne avec interface dynamique et navigation fluide.
+                        </p>
+                        <div class="projet-tech">
+                            <span>React.js</span><span>Node.js</span><span>API REST</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION CONTACT ==================== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-intro">
+                Une idée, un projet, une opportunité ?<br>
+                Je suis à l'écoute pour un stage, un emploi junior ou une mission freelance.
+            </p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:nymaminiainasavio0@gmail.com">nymaminiainasavio0@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/NyMaminiaina" target="_blank">github.com/NyMaminiaina</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/nymaminiaina/"
+                            target="_blank">linkedin.com/in/nymaminiaina</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>&copy; 2025 Ny Maminiaina Savio. Tous droits réservés.</p>
+    </footer>
+
+    <!-- ==================== SCRIPT JS ==================== -->
+    <script src="script.js"></script>
+</body>
+
+</html>
