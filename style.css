@@ -118,6 +118,16 @@ nav {
     max-width: 700px;
 }
 
+.hero-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #a855f7;
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.35);
+    margin-bottom: 25px;
+}
+
 .hero-salut {
     font-size: 1.2rem;
     color: #a855f7;
@@ -350,6 +360,14 @@ section {
     background: #0f0f0f;
 }
 
+.projets-intro {
+    color: #909090;
+    text-align: center;
+    max-width: 640px;
+    margin: -35px auto 50px;
+    font-size: 0.95rem;
+}
+
 .projets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -380,12 +398,12 @@ section {
     color: rgba(255, 255, 255, 0.2);
 }
 
-/* Fond unique pour chaque projet */
-.projet-card:nth-child(1) .projet-image {
+/* Fond alterné pour chaque projet */
+.projet-image.grad-a {
     background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
 }
 
-.projet-card:nth-child(2) .projet-image {
+.projet-image.grad-b {
     background: linear-gradient(135deg, #1a0a2e 0%, #3b1f5e 50%, #7c3aed 100%);
 }
 
@@ -397,12 +415,43 @@ section {
     position: absolute;
 }
 
-.projet-card:nth-child(1) .projet-image::before {
-    content: '\f1c0';
+/* Icône représentative par type de projet */
+.icon-warehouse::before { content: '\f494'; }
+.icon-rocket::before { content: '\f135'; }
+.icon-file-contract::before { content: '\f56c'; }
+.icon-leaf::before { content: '\f06c'; }
+.icon-car::before { content: '\f1b9'; }
+.icon-mobile::before { content: '\f3cd'; }
+.icon-bolt::before { content: '\f0e7'; }
+.icon-heart::before { content: '\f004'; }
+.icon-cart::before { content: '\f07a'; }
+.icon-graduation-cap::before { content: '\f19d'; }
+.icon-gauge::before { content: '\f624'; }
+.icon-piggy-bank::before { content: '\f4d3'; }
+
+/* Badge Projet perso / Stage-Collab */
+.projet-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(4px);
 }
 
-.projet-card:nth-child(2) .projet-image::before {
-    content: '\f5fc';
+.badge-perso {
+    background: rgba(168, 85, 247, 0.9);
+    color: #ffffff;
+}
+
+.badge-stage {
+    background: rgba(255, 255, 255, 0.1);
+    color: #d0d0d0;
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .projet-image img {
@@ -568,6 +617,18 @@ section {
 
 .projet-card:nth-child(3) {
     transition-delay: 0.3s;
+}
+
+.projet-card:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.projet-card:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.projet-card:nth-child(n+6) {
+    transition-delay: 0.6s;
 }
 
 .competence-categorie:nth-child(1) {
