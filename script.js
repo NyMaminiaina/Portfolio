@@ -72,4 +72,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-console.log('Tous les scripts sont chargés.');
+// ==================== ANNÉE DYNAMIQUE (FOOTER) ====================
+const anneeCourante = document.querySelector('#annee-courante');
+if (anneeCourante) {
+    anneeCourante.textContent = new Date().getFullYear();
+}
