@@ -1,4 +1,4 @@
-// ==================== MENU BURGER MOBILE ====================
+// MENU BURGER
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 const navItems = document.querySelectorAll('.nav-links a');
@@ -25,7 +25,7 @@ navItems.forEach(item => {
     });
 });
 
-// ==================== ANIMATION AU SCROLL ====================
+// ANIMATION DES ÉLÉMENTS AU DÉFILEMENT
 const observerOptions = {
     threshold: 0.15,
     rootMargin: '0px 0px -50px 0px'
@@ -48,7 +48,7 @@ elementsToAnimate.forEach(el => {
     observer.observe(el);
 });
 
-// ==================== HEADER SCROLL EFFECT ====================
+// EFFET D'OMBRE SUR LE HEADER LORS DU DÉFILEMENT
 const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
@@ -72,7 +72,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ==================== ANNÉE DYNAMIQUE (FOOTER) ====================
+// MISE À JOUR AUTOMATIQUE DE L'ANNÉE DANS LE FOOTER
 const anneeCourante = document.querySelector('#annee-courante');
 if (anneeCourante) {
     anneeCourante.textContent = new Date().getFullYear();

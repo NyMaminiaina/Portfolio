@@ -9,11 +9,15 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #0a0a0a;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #0a0908;
     color: #e0e0e0;
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+.mono {
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .container {
@@ -32,7 +36,7 @@ img {
     display: block;
 }
 
-/* ==================== HEADER / NAVIGATION ==================== */
+/* HEADER / NAVIGATION */
 header {
     position: fixed;
     top: 0;
@@ -54,10 +58,15 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #a855f7;
-    letter-spacing: 1px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #e0e0e0;
+    letter-spacing: 0;
+}
+
+.logo span {
+    color: #c8791a;
 }
 
 .nav-links {
@@ -67,7 +76,8 @@ nav {
 }
 
 .nav-links a {
-    font-size: 0.9rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
     font-weight: 500;
     color: #b0b0b0;
     transition: color 0.3s;
@@ -81,7 +91,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background: #a855f7;
+    background: #c8791a;
     transition: width 0.3s;
 }
 
@@ -100,7 +110,7 @@ nav {
     color: #e0e0e0;
 }
 
-/* ==================== SECTION HERO ==================== */
+/* ACCUEIL */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -109,9 +119,9 @@ nav {
     text-align: center;
     padding: 100px 20px 60px;
     background:
-        radial-gradient(ellipse at top right, rgba(168, 85, 247, 0.10), transparent 50%),
-        radial-gradient(ellipse at bottom left, rgba(59, 130, 246, 0.08), transparent 50%),
-        #0a0a0a;
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.012) 0px, rgba(255, 255, 255, 0.012) 1px, transparent 1px, transparent 3px),
+        radial-gradient(ellipse at 50% 0%, rgba(200, 121, 26, 0.09), transparent 55%),
+        #0a0908;
 }
 
 .hero-content {
@@ -123,16 +133,33 @@ nav {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #a855f7;
-    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.35);
+    border: 3px solid #c8791a;
+    box-shadow: 0 10px 30px rgba(200, 121, 26, 0.35);
     margin-bottom: 25px;
 }
 
 .hero-salut {
-    font-size: 1.2rem;
-    color: #a855f7;
-    margin-bottom: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    color: #c8791a;
+    margin-bottom: 14px;
     font-weight: 500;
+}
+
+.hero-salut::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 1.1em;
+    background: #c8791a;
+    margin-left: 4px;
+    vertical-align: -2px;
+    animation: curseur-clignotant 1s steps(1) infinite;
+}
+
+@keyframes curseur-clignotant {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
 }
 
 .hero-nom {
@@ -177,14 +204,14 @@ nav {
 }
 
 .btn-primary {
-    background: #a855f7;
+    background: #c8791a;
     color: #ffffff;
 }
 
 .btn-primary:hover {
-    background: #9333ea;
+    background: #a3610f;
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+    box-shadow: 0 10px 30px rgba(200, 121, 26, 0.3);
 }
 
 .btn-secondary {
@@ -194,22 +221,22 @@ nav {
 }
 
 .btn-secondary:hover {
-    border-color: #a855f7;
-    color: #a855f7;
+    border-color: #c8791a;
+    color: #c8791a;
     transform: translateY(-3px);
 }
 
 .btn-cv {
     background: transparent;
-    color: #a855f7;
-    border: 2px solid #a855f7;
+    color: #c8791a;
+    border: 2px solid #c8791a;
 }
 
 .btn-cv:hover {
-    background: #a855f7;
+    background: #c8791a;
     color: #ffffff;
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+    box-shadow: 0 10px 30px rgba(200, 121, 26, 0.3);
 }
 
 .hero-socials {
@@ -225,11 +252,11 @@ nav {
 }
 
 .hero-socials a:hover {
-    color: #a855f7;
+    color: #c8791a;
     transform: translateY(-3px);
 }
 
-/* ==================== SECTIONS GÉNÉRALES ==================== */
+/* SECTION */
 section {
     padding: 100px 20px;
 }
@@ -248,12 +275,12 @@ section {
     display: block;
     width: 60px;
     height: 4px;
-    background: #a855f7;
+    background: #c8791a;
     margin: 15px auto 0;
     border-radius: 2px;
 }
 
-/* ==================== À PROPOS ==================== */
+/* À PROPOS */
 .apropos {
     background: #0f0f0f;
 }
@@ -272,7 +299,7 @@ section {
 }
 
 .apropos-texte strong {
-    color: #a855f7;
+    color: #c8791a;
 }
 
 .apropos-infos {
@@ -291,13 +318,13 @@ section {
 }
 
 .info-item i {
-    color: #a855f7;
+    color: #c8791a;
     font-size: 1.2rem;
     width: 25px;
     text-align: center;
 }
 
-/* ==================== COMPÉTENCES ==================== */
+/* COMPÉTENCES */
 .competences {
     background: #0a0a0a;
 }
@@ -317,7 +344,7 @@ section {
 }
 
 .competence-categorie:hover {
-    border-color: #a855f7;
+    border-color: #c8791a;
     transform: translateY(-5px);
 }
 
@@ -331,7 +358,7 @@ section {
 }
 
 .competence-categorie h3 i {
-    color: #a855f7;
+    color: #c8791a;
 }
 
 .badges {
@@ -341,21 +368,23 @@ section {
 }
 
 .badge {
-    background: #1a1a1a;
+    font-family: 'JetBrains Mono', monospace;
+    background: #161514;
     color: #c0c0c0;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    padding: 7px 14px;
+    border-radius: 4px;
+    border: 1px solid #232120;
+    font-size: 0.8rem;
     font-weight: 500;
     transition: all 0.3s;
 }
 
 .badge:hover {
-    background: #a855f7;
-    color: #ffffff;
+    border-color: #c8791a;
+    color: #c8791a;
 }
 
-/* ==================== PROJETS ==================== */
+/* PROJETS */
 .projets {
     background: #0f0f0f;
 }
@@ -384,7 +413,7 @@ section {
 
 .projet-card:hover {
     transform: translateY(-8px);
-    border-color: #a855f7;
+    border-color: #c8791a;
 }
 
 .projet-image {
@@ -398,13 +427,24 @@ section {
     color: rgba(255, 255, 255, 0.2);
 }
 
-/* Fond alterné pour chaque projet */
+/* Dégradés de couleur */
 .projet-image.grad-a {
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+    background: linear-gradient(135deg, #1c1917 0%, #44403c 50%, #78716c 100%);
 }
 
 .projet-image.grad-b {
-    background: linear-gradient(135deg, #1a0a2e 0%, #3b1f5e 50%, #7c3aed 100%);
+    background: linear-gradient(135deg, #0c1a17 0%, #134e4a 50%, #0f766e 100%);
+}
+
+.projet-image.grad-c {
+    background: linear-gradient(135deg, #1c1410 0%, #57330f 50%, #c8791a 100%);
+}
+
+.projet-placeholder {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 0.5px;
 }
 
 .projet-image::before {
@@ -415,7 +455,7 @@ section {
     position: absolute;
 }
 
-/* Icône représentative par type de projet */
+/* Icônes représentatives */
 .icon-warehouse::before { content: '\f494'; }
 .icon-rocket::before { content: '\f135'; }
 .icon-file-contract::before { content: '\f56c'; }
@@ -444,7 +484,7 @@ section {
 }
 
 .badge-perso {
-    background: rgba(168, 85, 247, 0.9);
+    background: rgba(200, 121, 26, 0.9);
     color: #ffffff;
 }
 
@@ -538,7 +578,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(168, 85, 247, 0.85);
+    background: rgba(200, 121, 26, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -583,15 +623,16 @@ section {
 }
 
 .projet-tech span {
-    background: #1a1a1a;
-    color: #a855f7;
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.78rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: #161514;
+    color: #c8791a;
+    padding: 5px 11px;
+    border-radius: 4px;
+    font-size: 0.74rem;
     font-weight: 500;
 }
 
-/* ==================== CONTACT ==================== */
+/* CONTACT */
 .contact {
     background: #0a0a0a;
 }
@@ -630,7 +671,7 @@ section {
 }
 
 .contact-item i {
-    color: #a855f7;
+    color: #c8791a;
     font-size: 1.3rem;
     width: 30px;
     text-align: center;
@@ -642,7 +683,7 @@ section {
 }
 
 .contact-item a:hover {
-    color: #a855f7;
+    color: #c8791a;
 }
 
 /*  SCROLLBAR  */
@@ -660,10 +701,10 @@ section {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #a855f7;
+    background: #c8791a;
 }
 
-/* ==================== ANIMATIONS AU SCROLL ==================== */
+/* ANIMATION DES ÉLÉMENTS */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -715,7 +756,7 @@ section {
     transition-delay: 0.4s;
 }
 
-/* ==================== FOOTER ==================== */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 30px 20px;
@@ -725,7 +766,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ==================== RESPONSIVE ==================== */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
@@ -797,4 +838,22 @@ footer {
         width: 80%;
         text-align: center;
     }
+}
+
+/* BOUTONS OVERLAY PROJETS */
+.overlay-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn-github {
+    background: #24292e;
+    color: #ffffff;
+}
+
+.btn-github:hover {
+    background: #000000;
 }
