@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ny Maminiaina Savio - Développeur Web Full-Stack</title>
     <meta name="description"
-    content="Portfolio de Ny Maminiaina Savio, développeur web full-stack (HTML, CSS, JavaScript, React, Laravel, Node.js). Projets, compétences et contact pour stage, emploi ou freelance.">
+        content="Portfolio de Ny Maminiaina Savio, développeur web full-stack (HTML, CSS, JavaScript, React, Laravel, Node.js). Projets, compétences et contact pour stage, emploi ou freelance.">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ny Maminiaina Savio - Développeur Web Full-Stack">
     <meta property="og:description"
-    content="Portfolio de Ny Maminiaina Savio, développeur web full-stack. Découvrez mes projets, mes compétences et mes coordonnées.">
+        content="Portfolio de Ny Maminiaina Savio, développeur web full-stack. Découvrez mes projets, mes compétences et mes coordonnées.">
     <meta property="og:image" content="images/profil.jpg">
 
     <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a0908'/><text x='14' y='66' font-family='monospace' font-size='54' font-weight='700' fill='%23c8791a'>&gt;_</text></svg>">
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a0908'/><text x='14' y='66' font-family='monospace' font-size='54' font-weight='700' fill='%23c8791a'>&gt;_</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -59,8 +60,8 @@
             <div class="hero-buttons">
                 <a href="#projets" class="btn btn-primary">Voir mes projets</a>
                 <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                <a href="files/CV_Ny_Maminiaina_Savio.pdf" download class="btn btn-cv">
-                    <i class="fas fa-download"></i> Télécharger mon CV
+                <a href="files/CV_Ny_Maminiaina_Savio.pdf" target="_blank" rel="noopener" class="btn btn-cv">
+                    Voir mon CV
                 </a>
             </div>
             <div class="hero-socials">
@@ -85,7 +86,7 @@
                         Je maîtrise la création de sites et d'applications web de A à Z :
                         du <strong>front-end</strong> (HTML, CSS, JavaScript, React.js)
                         au <strong>back-end</strong> (PHP, CodeIgniter, Symfony, Laravel, Node.js),
-                        en passant par la gestion de bases de données.
+                        en passant par la gestion de bases de données et la mise en ligne sur serveur.
                     </p>
                     <p>
                         Je développe aussi des <strong>applications mobiles</strong> avec
@@ -147,7 +148,7 @@
                         <span class="badge">MySQL</span>
                     </div>
                 </div>
-
+                
                 <!-- Outils & Logiciels -->
                 <div class="competence-categorie">
                     <h3><i class="fas fa-tools"></i> Outils & Workflow</h3>
@@ -156,7 +157,7 @@
                         <span class="badge">Gestion de versions (Git, GitHub)</span>
                         <span class="badge">Tests d'API (Postman)</span>
                         <span class="badge">CMS (WordPress)</span>
-                        <span class="badge">Déploiement (FileZilla)</span>
+                        <span class="badge">Déploiement & hébergement (FileZilla, N0C, DirectAdmin, LWS)</span>
                         <span class="badge">Design & Montage (Photoshop, CapCut)</span>
                         <span class="badge">Suite bureautique (Excel, Google Workspace)</span>
                     </div>
@@ -191,16 +192,18 @@
                 <!-- Projet : Gestion de Stock -->
                 <div class="projet-card">
                     <div class="projet-image">
-                        <img src="images/projets/gestion-de-stock.jpg" alt="Capture d'écran de l'application Gestion de Stock - module Ventes">
+                        <img src="images/projets/gestion-de-stock.jpg"
+                            alt="Capture d'écran de l'application Gestion de Stock - module Ventes">
                         <span class="projet-badge badge-perso">Projet perso</span>
                         <div class="projet-overlay">
-                            <a href="https://github.com/NyMaminiaina/gestion-de-stock" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                            <a href="https://github.com/NyMaminiaina/gestion-de-stock" target="_blank"
+                                class="btn btn-small"><i class="fab fa-github"></i> Voir sur GitHub</a>
                         </div>
                     </div>
                     <div class="projet-info">
                         <h3>Gestion de Stock</h3>
                         <p>Application web développée seul, de A à Z : suivi des entrées/sorties,
-                        alertes de rupture et tableau de bord pour piloter un stock au quotidien.</p>
+                            alertes de rupture et tableau de bord pour piloter un stock au quotidien.</p>
                         <div class="projet-tech">
                             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>jQuery</span><span>PHP</span><span>MySQL</span>
                         </div>
@@ -211,18 +214,20 @@
                 <div class="projet-card">
                     <div class="projet-image grad-b projet-image-mobile">
                         <div class="phone-mockup">
-                            <img src="images/projets/rootboosterpro.jpg" alt="Capture d'écran de l'application RootBoosterPro">
+                            <img src="images/projets/rootboosterpro.jpg"
+                                alt="Capture d'écran de l'application RootBoosterPro">
                         </div>
                         <span class="projet-badge badge-perso">Projet perso</span>
                         <div class="projet-overlay">
-                            <a href="https://github.com/NyMaminiaina/RootBoosterPro" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                            <a href="https://github.com/NyMaminiaina/RootBoosterPro" target="_blank"
+                                class="btn btn-small"><i class="fab fa-github"></i> Voir sur GitHub</a>
                         </div>
                     </div>
                     <div class="projet-info">
                         <h3>RootBoosterPro</h3>
                         <p>Application Android née d'une idée personnelle : un module natif Kotlin
                             pilote les fonctionnalités root de l'appareil pour des optimisations système
-                        que le mobile classique n'autorise pas.</p>
+                            que le mobile classique n'autorise pas.</p>
                         <div class="projet-tech">
                             <span>React Native</span><span>Expo</span><span>Kotlin</span><span>Java</span>
                         </div>
@@ -233,7 +238,8 @@
                 <div class="projet-card">
                     <div class="projet-image grad-a projet-image-mobile">
                         <div class="phone-mockup">
-                            <img src="images/projets/mescontrats.jpg" alt="Capture d'écran de l'application mobile MesContrats">
+                            <img src="images/projets/mescontrats.jpg"
+                                alt="Capture d'écran de l'application mobile MesContrats">
                         </div>
                         <span class="projet-badge badge-perso">Projet perso</span>
                         <div class="projet-overlay">
@@ -241,7 +247,8 @@
                                 <a href="https://mescontrats.vercel.app" target="_blank" class="btn btn-small">
                                     <i class="fas fa-external-link-alt"></i> Voir la démo
                                 </a>
-                                <a href="https://github.com/NyMaminiaina/MesContrats" target="_blank" class="btn btn-small btn-github">
+                                <a href="https://github.com/NyMaminiaina/MesContrats" target="_blank"
+                                    class="btn btn-small btn-github">
                                     <i class="fab fa-github"></i> Code source
                                 </a>
                             </div>
@@ -250,7 +257,7 @@
                     <div class="projet-info">
                         <h3>MesContrats</h3>
                         <p>Application mobile personnelle pour centraliser, suivre et être alerté
-                        sur ses contrats (échéances, renouvellements) plutôt que de s'y perdre dans des papiers.</p>
+                            sur ses contrats (échéances, renouvellements) plutôt que de s'y perdre dans des papiers.</p>
                         <div class="projet-tech">
                             <span>React Native</span><span>Expo</span>
                         </div>
@@ -260,16 +267,18 @@
                 <!-- Projet : Plateforme E-learning -->
                 <div class="projet-card">
                     <div class="projet-image">
-                        <img src="images/projets/e-learning.jpg" alt="Capture d'écran de la plateforme E-learning - page d'accueil">
+                        <img src="images/projets/e-learning.jpg"
+                            alt="Capture d'écran de la plateforme E-learning - page d'accueil">
                         <span class="projet-badge badge-perso">Projet perso</span>
                         <div class="projet-overlay">
-                            <a href="https://github.com/NyMaminiaina/react-e-learning" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                            <a href="https://github.com/NyMaminiaina/react-e-learning" target="_blank"
+                                class="btn btn-small"><i class="fab fa-github"></i> Voir sur GitHub</a>
                         </div>
                     </div>
                     <div class="projet-info">
                         <h3>Plateforme E-learning</h3>
                         <p>Application web personnelle de cours en ligne : catalogue de formations,
-                        suivi de progression et interface étudiante pensée pour rester simple et rapide.</p>
+                            suivi de progression et interface étudiante pensée pour rester simple et rapide.</p>
                         <div class="projet-tech">
                             <span>React.js</span><span>MySQL</span>
                         </div>
@@ -279,16 +288,18 @@
                 <!-- Projet : Backoffice de Gestion -->
                 <div class="projet-card">
                     <div class="projet-image">
-                        <img src="images/projets/backoffice.jpg" alt="Capture d'écran du Backoffice de Gestion - module Produits">
+                        <img src="images/projets/backoffice.jpg"
+                            alt="Capture d'écran du Backoffice de Gestion - module Produits">
                         <span class="projet-badge badge-perso">Projet perso</span>
                         <div class="projet-overlay">
-                            <a href="https://github.com/NyMaminiaina/office" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                            <a href="https://github.com/NyMaminiaina/office" target="_blank" class="btn btn-small"><i
+                                    class="fab fa-github"></i> Voir sur GitHub</a>
                         </div>
                     </div>
                     <div class="projet-info">
                         <h3>Backoffice de Gestion</h3>
                         <p>Interface d'administration développée seul pour piloter des données métier :
-                        gestion des utilisateurs, tableaux de bord et droits d'accès.</p>
+                            gestion des utilisateurs, tableaux de bord et droits d'accès.</p>
                         <div class="projet-tech">
                             <span>PHP</span><span>CodeIgniter</span><span>MySQL</span>
                         </div>
@@ -298,16 +309,18 @@
                 <!-- Projet : Mini Bank App -->
                 <div class="projet-card">
                     <div class="projet-image">
-                        <img src="images/projets/mini-bank-app.jpg" alt="Capture d'écran de Mini Bank App - tableau de bord">
+                        <img src="images/projets/mini-bank-app.jpg"
+                            alt="Capture d'écran de Mini Bank App - tableau de bord">
                         <span class="projet-badge badge-perso">Projet perso</span>
                         <div class="projet-overlay">
-                            <a href="https://github.com/NyMaminiaina/Mini-Bank-App" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                            <a href="https://github.com/NyMaminiaina/Mini-Bank-App" target="_blank"
+                                class="btn btn-small"><i class="fab fa-github"></i> Voir sur GitHub</a>
                         </div>
                     </div>
                     <div class="projet-info">
                         <h3>Mini Bank App</h3>
                         <p>Simulateur d'application bancaire pour explorer une API backend maison :
-                        comptes, transferts entre utilisateurs et historique des transactions.</p>
+                            comptes, transferts entre utilisateurs et historique des transactions.</p>
                         <div class="projet-tech">
                             <span>Node.js</span><span>MySQL</span>
                         </div>
@@ -318,7 +331,8 @@
                 <div class="projet-card">
                     <div class="projet-image grad-b projet-image-mobile">
                         <div class="phone-mockup">
-                            <img src="images/projets/tozzigreen.jpg" alt="Capture d'écran de l'application mobile TozziGreen">
+                            <img src="images/projets/tozzigreen.jpg"
+                                alt="Capture d'écran de l'application mobile TozziGreen">
                         </div>
                         <span class="projet-badge badge-stage">Stage / Collab</span>
                     </div>
@@ -326,7 +340,7 @@
                         <h3>TozziGreen</h3>
                         <p>Application mobile de facturation d'électricité reprise avec d'autres stagiaires.
                             J'y ai construit un backend Laravel dédié avec authentification sécurisée (Sanctum)
-                        pour ne plus exposer les identifiants du partenaire côté application.</p>
+                            pour ne plus exposer les identifiants du partenaire côté application.</p>
                         <div class="projet-tech">
                             <span>React Native</span><span>Expo</span><span>Laravel</span><span>Sanctum</span>
                         </div>
@@ -336,7 +350,8 @@
                 <!-- Projet : Korean-Auto -->
                 <div class="projet-card">
                     <div class="projet-image">
-                        <img src="images/projets/korean-auto.jpg" alt="Capture d'écran de l'application Korean Auto - inventaire">
+                        <img src="images/projets/korean-auto.jpg"
+                            alt="Capture d'écran de l'application Korean Auto - inventaire">
                         <span class="projet-badge badge-stage">Stage / Collab</span>
                         <div class="projet-overlay">
                             <a href="https://korean-auto.mg/" target="_blank" class="btn btn-small">Voir le site</a>
@@ -345,7 +360,7 @@
                     <div class="projet-info">
                         <h3>Korean Auto</h3>
                         <p>Système de gestion commerciale pour un point de vente de pièces auto :
-                        achats fournisseurs, ventes, points de vente multiples, historique et suivi client.</p>
+                            achats fournisseurs, ventes, points de vente multiples, historique et suivi client. J'ai aussi participé à sa mise en ligne (domaine, base de données, fichiers sur le serveur).</p>
                         <div class="projet-tech">
                             <span>PHP</span><span>CodeIgniter</span><span>MySQL</span>
                         </div>
@@ -364,7 +379,7 @@
                     <div class="projet-info">
                         <h3>QitKif</h3>
                         <p>Application et site web développés en équipe pendant le stage,
-                        avec une base de code partagée entre le web et le mobile.</p>
+                            avec une base de code partagée entre le web et le mobile.</p>
                         <div class="projet-tech">
                             <span>React Native</span><span>Node.js</span><span>CodeIgniter</span><span>MySQL</span>
                         </div>
@@ -374,15 +389,17 @@
                 <!-- Projet : Mada Energy -->
                 <div class="projet-card">
                     <div class="projet-image">
-                        <img src="images/projets/mada-energy.jpg" alt="Capture d'écran du site Mada Energy - page d'accueil">
+                        <img src="images/projets/mada-energy.jpg"
+                            alt="Capture d'écran du site Mada Energy - page d'accueil">
                         <span class="projet-badge badge-stage">Stage / Collab</span>
                         <div class="projet-overlay">
-                            <a href="https://mada-energy.tuto-info.com/" target="_blank" class="btn btn-small">Voir le site</a>
+                            <a href="https://mada-energy.tuto-info.com/" target="_blank" class="btn btn-small">Voir le
+                                site</a>
                         </div>
                     </div>
                     <div class="projet-info">
                         <h3>Mada Energy</h3>
-                        <p>Site vitrine repris et fait évoluer en équipe pour un acteur du secteur de l'énergie.</p>
+                        <p>Site vitrine repris et fait évoluer en équipe pour un acteur du secteur de l'énergie. J'ai aussi participé à sa mise en ligne (domaine, base de données).</p>
                         <div class="projet-tech">
                             <span>JavaScript</span><span>WordPress</span><span>MySQL</span>
                         </div>
@@ -401,7 +418,7 @@
                     <div class="projet-info">
                         <h3>Tafa</h3>
                         <p>Site de rencontre repris avec d'autres stagiaires : gestion des profils
-                        et mise en relation entre membres.</p>
+                            et mise en relation entre membres.</p>
                         <div class="projet-tech">
                             <span>React.js</span><span>Laravel</span><span>MySQL</span>
                         </div>
@@ -411,16 +428,18 @@
                 <!-- Projet : E-Market -->
                 <div class="projet-card">
                     <div class="projet-image">
-                        <img src="images/projets/e-market.jpg" alt="Capture d'écran de la plateforme E-Market - catalogue produits">
+                        <img src="images/projets/e-market.jpg"
+                            alt="Capture d'écran de la plateforme E-Market - catalogue produits">
                         <span class="projet-badge badge-stage">Stage / Collab</span>
                         <div class="projet-overlay">
-                            <a href="https://market.tuto-info.com/" target="_blank" class="btn btn-small">Voir le site</a>
+                            <a href="https://market.tuto-info.com/" target="_blank" class="btn btn-small">Voir le
+                                site</a>
                         </div>
                     </div>
                     <div class="projet-info">
                         <h3>E-Market</h3>
                         <p>Plateforme e-commerce reprise en équipe : catalogue produits, panier
-                        et gestion des commandes.</p>
+                            et gestion des commandes.</p>
                         <div class="projet-tech">
                             <span>React.js (Vite)</span><span>Tailwind CSS</span><span>Laravel</span><span>MySQL</span>
                         </div>
@@ -430,7 +449,8 @@
                 <!-- Projet : Tuto-Info -->
                 <div class="projet-card">
                     <div class="projet-image">
-                        <img src="images/projets/tuto-info.jpg" alt="Capture d'écran du site Tuto-Info - page d'accueil">
+                        <img src="images/projets/tuto-info.jpg"
+                            alt="Capture d'écran du site Tuto-Info - page d'accueil">
                         <span class="projet-badge badge-stage">Stage / Collab</span>
                         <div class="projet-overlay">
                             <a href="https://www.tuto-info.com/" target="_blank" class="btn btn-small">Voir le site</a>
@@ -439,9 +459,75 @@
                     <div class="projet-info">
                         <h3>Tuto-Info</h3>
                         <p>Site vitrine de l'agence où j'effectue mon stage. J'ai participé avec l'équipe
-                        à l'intégration front-end et repris plusieurs éléments de design de l'interface.</p>
+                            à l'intégration front-end et repris plusieurs éléments de design de l'interface.</p>
                         <div class="projet-tech">
                             <span>React.js (Vite)</span><span>CodeIgniter 4</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet : MTI - Madagascar Tech Institute -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="images/projets/mti-tuto-info.jpg"
+                            alt="Capture d'écran du site MTI - Madagascar Tech Institute - page d'accueil">
+                        <span class="projet-badge badge-stage">Stage / Collab</span>
+                        <div class="projet-overlay">
+                            <a href="https://www.univ.tuto-info.com/" target="_blank" class="btn btn-small">Voir le
+                                site</a>
+                        </div>
+                    </div>
+                    <div class="projet-info">
+                        <h3>MTI - Madagascar Tech Institute</h3>
+                        <p>Déclinaison universitaire du site Tuto-Info, réalisée en équipe durant le stage :
+                            reprise de la base existante et transformation en plateforme vitrine pour un
+                            établissement d'enseignement supérieur (filières, actualités, projets et recherche).</p>
+                        <div class="projet-tech">
+                            <span>React.js</span><span>CodeIgniter 4</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet : Softio -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="images/projets/softio.jpg"
+                            alt="Capture d'écran de Softio - module de gestion des prospects">
+                        <span class="projet-badge badge-stage">Stage / Collab</span>
+                        <div class="projet-overlay">
+                            <a href="https://prospection.tuto-info.com/" target="_blank" class="btn btn-small">Voir
+                                le site</a>
+                        </div>
+                    </div>
+                    <div class="projet-info">
+                        <h3>Softio</h3>
+                        <p>Plateforme de gestion d'entreprise (prospection, ventes, stock, facturation) développée
+                            en équipe et améliorée en continu : refonte du design de chaque interface d'accueil
+                            et correction de plusieurs bugs côté backend pour fiabiliser le fonctionnement global.</p>
+                        <div class="projet-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>jQuery</span><span>PHP</span><span>CodeIgniter 3</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet : Softio Module -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="images/projets/softio-module.jpg"
+                            alt="Capture d'écran de Softio Module - page d'accueil de la plateforme modulaire">
+                        <span class="projet-badge badge-stage">Stage / Collab</span>
+                        <div class="projet-overlay">
+                            <a href="http://softio-module.tuto-info.com/" target="_blank" class="btn btn-small">Voir le
+                                site</a>
+                        </div>
+                    </div>
+                    <div class="projet-info">
+                        <h3>Softio Module</h3>
+                        <p>Plateforme modulaire de gestion d'entreprise, dans l'esprit d'Odoo, conçue en équipe :
+                            chaque entreprise active uniquement les modules dont elle a besoin (ventes, stock,
+                            facturation...) depuis une seule interface, avec un front React et une API Laravel.</p>
+                        <div class="projet-tech">
+                            <span>React.js</span><span>Laravel 10</span><span>MySQL</span>
                         </div>
                     </div>
                 </div>
@@ -472,7 +558,7 @@
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <a href="https://www.linkedin.com/in/nymaminiaina/"
-                        target="_blank">linkedin.com/in/nymaminiaina</a>
+                            target="_blank">linkedin.com/in/nymaminiaina</a>
                     </div>
                 </div>
             </div>

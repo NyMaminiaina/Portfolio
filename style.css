@@ -158,8 +158,16 @@ nav {
 }
 
 @keyframes curseur-clignotant {
-    0%, 49% { opacity: 1; }
-    50%, 100% { opacity: 0; }
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
 }
 
 .hero-nom {
@@ -418,7 +426,8 @@ section {
 
 .projet-image {
     position: relative;
-    height: 220px;
+    aspect-ratio: 1000 / 436;
+    min-height: 170px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -456,18 +465,53 @@ section {
 }
 
 /* Icônes représentatives */
-.icon-warehouse::before { content: '\f494'; }
-.icon-rocket::before { content: '\f135'; }
-.icon-file-contract::before { content: '\f56c'; }
-.icon-leaf::before { content: '\f06c'; }
-.icon-car::before { content: '\f1b9'; }
-.icon-mobile::before { content: '\f3cd'; }
-.icon-bolt::before { content: '\f0e7'; }
-.icon-heart::before { content: '\f004'; }
-.icon-cart::before { content: '\f07a'; }
-.icon-graduation-cap::before { content: '\f19d'; }
-.icon-gauge::before { content: '\f624'; }
-.icon-piggy-bank::before { content: '\f4d3'; }
+.icon-warehouse::before {
+    content: '\f494';
+}
+
+.icon-rocket::before {
+    content: '\f135';
+}
+
+.icon-file-contract::before {
+    content: '\f56c';
+}
+
+.icon-leaf::before {
+    content: '\f06c';
+}
+
+.icon-car::before {
+    content: '\f1b9';
+}
+
+.icon-mobile::before {
+    content: '\f3cd';
+}
+
+.icon-bolt::before {
+    content: '\f0e7';
+}
+
+.icon-heart::before {
+    content: '\f004';
+}
+
+.icon-cart::before {
+    content: '\f07a';
+}
+
+.icon-graduation-cap::before {
+    content: '\f19d';
+}
+
+.icon-gauge::before {
+    content: '\f624';
+}
+
+.icon-piggy-bank::before {
+    content: '\f4d3';
+}
 
 /* Badge Projet perso / Stage-Collab */
 .projet-badge {
@@ -498,6 +542,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
     transition: transform 0.5s;
 }
 
@@ -507,6 +552,8 @@ section {
 
 /* Mockup téléphone pour capture d'appli mobile (MesContrats) */
 .projet-image-mobile {
+    aspect-ratio: auto;
+    height: 240px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
